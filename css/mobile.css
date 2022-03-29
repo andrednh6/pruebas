@@ -1,0 +1,446 @@
+@media (max-width: 1250px) {
+
+ /* -----Variables*/
+/*--Colores--*/
+:root{
+  --green-color: #ABFFE3;
+  --blue-color:#70E7F2; 
+  --darkerblue-color:#37D1FE;
+  --letter-color:#000;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Quicksand:wght@300;700&display=swap');
+  
+  
+  html, body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+        /* INICIO DEL NAV BAR */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--blue-color);
+    padding: 10px;
+    color: white;
+    font-size:14px;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav li{
+    padding-left: 20px;
+   /* Para quitarle el punto de la lista*/
+    list-style: none;
+  }
+  nav li a {
+    color: white;
+    /* Para quitar el subrayado*/
+    text-decoration: none;
+  }
+  /* Opciones del boton */
+  nav li a:hover{
+   color:#287EA8;
+  }
+        /* FIN DEL NAV BAR */  
+
+        /* INICIO DEL HERO */   
+  body .hero{
+    display: grid;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2]1fr [y3] 0px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  body .hero {
+    background: linear-gradient(180deg, #ABFFE3 0%, #37D1FE 100%);
+  } 
+  body .hero .main_logo img{
+    width: 72px;
+    margin-top: 20px;
+  }
+
+  body .hero .main_logo{
+    grid-row: y0 / y1;
+    grid-column: 1 / 4;
+  }
+  .hero{
+    padding: 40px 40px;
+  }
+  body .hero h2{
+  }
+  body .hero h1 {
+    color: var(--letter-color);
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 88px 0px 4px;
+  }
+  body .brand_description {
+    margin: 0;
+    text-align: center;
+    grid-row: y1 / y2;
+    grid-column: 1 / 4;
+  }
+  body .brand_what{
+    text-align: center;
+    grid-row: y2 / y3;
+    font-size: 16px;
+    grid-column: 1 / 4;
+  }
+  body .brand_what h3{
+    font-weight: 300;
+  }
+ /*     FIN HERO        */
+ /*     INICIO DEL HOW        */
+  body .how{
+    display: grid;
+    grid-template-rows: [0]56px [1]20px [2]40px [3]56px [4]20px [5]40px [6]56px [7]20px [8]40px [9]56px [10]20px [11]40px [12]56px [13]20px [14]40px;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    background: linear-gradient(180deg, #37D1FE 0%, #ADFFE4 100%);
+    justify-content: center;
+  }
+  body .patience {
+    grid-row: 0 / 2;
+    grid-column: 1 / 4;
+  }
+  body .patience_description{
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
+  }
+  body .motivation{
+    grid-row: 4 / 6;
+    grid-column: 1 / 4;
+  }
+  body .motivation_description{
+    grid-row: 6 / 8;
+    grid-column: 1 / 4;
+  }
+  body .constancy{
+    grid-row: 8 / 10;
+    grid-column: 1 / 4;
+  }
+  body .constancy_description{
+    grid-row: 10 / 12;
+    grid-column: 1 / 4;
+  }
+  body .how img{
+    width: 56px;
+  }
+  body .how .patience, .patience_description, .motivation, .motivation_description, .constancy, .constancy_description{
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  body .how .patience h4, .motivation h4, .constancy h4{
+    margin: 0px;
+  }
+  
+  body .hero h2, .learn_test h2, .hacker_style h2 {
+    color: var(--letter-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:20px;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+  }
+  body .how h4{
+    font-weight: 700;
+    font-size: 12px;
+    align-items: center;
+  }
+  body .how p{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  
+        /* FIN DEL HOW */
+
+        /* INICIO DEL LEARN_TEST */  
+body .learn_test h3{
+  font-size: 12px;
+}
+body .learn_test{
+  height: 500px;
+}
+        body .cta_test{
+  justify-items: center;
+  display: grid;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+body .stress{
+grid-row: 2 / 3;
+grid-column: 1 / 3;
+}
+body .stress_description{
+grid-row: 3 / 4;
+grid-column: 1 / 3;
+margin: 0;
+}
+body .memory{
+grid-row: 4 / 5;
+grid-column: 1 / 3;
+}
+body .memory_description{
+grid-row: 5 / 6;
+grid-column: 1 / 3;
+margin: 0;
+}
+body .test{
+grid-row: 6 / 7;  
+grid-column: 1 / 3;
+margin: 0;
+}
+body .test_button{
+grid-row: 7 / 8;
+grid-column: 1 / 3;
+}
+        /* FIN DEL LEARN_TEST */ 
+        /* INICIO DEL HACKER_STYLE */ 
+ body .hacker_style{
+   height: 600px;
+  justify-content: center;
+  }
+body .hacker_style h2{
+  display: grid;
+  font-size: 20px;
+}
+body .hacker_style p{
+  font-size: 14px;
+}
+        /* FIN DEL HACKER_STYLE */
+        /* INICIO DEL FIRST_ACCOUNT */ 
+body .first_account{
+height: 350px;
+}
+body .first_account h2{
+ font-size: 20px;
+}
+body .first_account h3{
+  font-size: 14px;
+ }
+ 
+        /* FIN DEL FIRST_ACCOUNT */
+
+
+
+        .brand_image a{
+    text-decoration: none;
+    color: white;
+  }
+  .brand_image a:hover{
+    color:#287EA8;
+  }
+  .presentacion {
+    background-color: var(--grey-color) ;
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
+    zoom: 1.2;
+    width: 900px;
+  }
+  .presentacion_registro{
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    padding: 5%;
+  }
+  .presentacion_registro .content .brand_register_description h2{
+    font-size: 20px;
+    color: #707070;
+  }
+
+  .content h1{
+    font-family: 'Quicksand', sans-serif;
+    color: #707070;
+  }
+
+  .content h2{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+    color: #707070;
+  }
+
+  .content{
+    display: grid;
+    padding:0%;
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+  .login{
+    width: 179px;
+    margin: auto;
+  }
+  .login a{
+    text-decoration: none;
+    color: white;
+  }
+  .login .forgot_password {
+    color: #287EA8;
+  }
+  
+  .brand {
+    display: flex;
+    height: fit-content;
+  }
+  
+  .new_register {
+   background-color: white;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    width: 240px;
+    height: 312px;
+    border: 2px solid var(--blue-color);
+    box-shadow: 0 0 4px var(--letter-color);
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .new_register input{
+    margin-top: 5px;
+    width:95% ;
+  }
+  
+  .crear_cuenta{
+    background-color: var(--blue-color);
+    color: var(--grey-color);
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .ingresa_button{
+    background-color: var(--green-color);
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border:none;
+    margin-top: 10px; 
+    border-radius: 2px;
+  
+  }
+  .ingresa_button:hover {
+    background-color: #5E9E22;
+  
+  }
+  
+  .crearcuenta_button{
+    background-color:var(--blue-color);
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+  }
+  .crearcuenta_button:hover{
+    background-color:#287EA8 ;
+  }
+  .contactame {
+    margin: 0px;
+    background-color: #287EA8;
+    color: var(--letter-color);
+    padding: 1%;
+    text-align: center;
+    color: white;
+  }
+  .contact{
+    margin: 0 auto;
+    font-size: 17px;
+  }
+  .email{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  label{
+  color: var(--letter-color);
+  margin-bottom: 2px;
+  }
+  .forgot_password {
+    margin-top:100px;
+  }
+  input{
+    display: flex;
+    border: 1px solid var(--letter-color);
+    border-radius: 2px;
+    margin-top: 1px;
+    color: var(--letter-color);
+  }
+ 
+ 
+ 
+ 
+ 
+  /*
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size:20;
+  }
+ body{
+   background-color: white;
+}
+.presentacion {
+  display:inherit;
+  padding: 5%;
+  height: auto;
+  width: 300px;
+  }
+.presentacion_registro {
+    display:inherit;
+    padding: 5%;
+    height: auto;
+    width: 300px;
+    }
+.brand{
+  margin-left: 10px;
+}
+.brand_description{
+  margin-left: 10px;
+}
+.content{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.registro{
+  width: 240px;
+  margin: 0 auto;
+}
+  .products{
+    display: inherit;
+    height: auto;
+  }
+  .product{
+    margin-top: auto;
+  }
+  .main_section{
+    padding: 4%;
+  }
+  .beneficios, .mentions{
+    display: inherit;
+  } */
+
+
+}
